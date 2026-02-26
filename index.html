@@ -35,7 +35,6 @@
             --whatsapp-dark: #20b859;
         }
 
-        /* Tipografia */
         h1 {
             font-size: 3.2rem;
             font-weight: 700;
@@ -116,7 +115,6 @@
             color: var(--warm-terra);
         }
 
-        /* Desktop menu */
         .desktop-menu {
             display: flex;
             align-items: center;
@@ -144,7 +142,7 @@
         }
 
         .btn-whats-nav {
-            background: var(--warm-terra);
+            background: var(--whatsapp);
             color: white !important;
             padding: 0.7rem 1.8rem !important;
             border-radius: 40px;
@@ -154,7 +152,7 @@
             transition: 0.3s;
         }
         .btn-whats-nav:hover {
-            background: var(--deep-teal);
+            background: var(--whatsapp-dark);
             transform: translateY(-2px);
         }
         .btn-whats-nav:hover:after {
@@ -233,7 +231,7 @@
             height: 90px;
         }
 
-        /* ===== BOTÕES ===== */
+        /* ===== BOTÕES WHATSAPP (APENAS NOS CTAS) ===== */
         .btn-whats-primary {
             display: inline-flex;
             align-items: center;
@@ -286,7 +284,7 @@
         .foto-destaque {
             width: 100%;
             max-width: 500px;
-            border-radius: 40px 40px 40px 40px;
+            border-radius: 40px;
             box-shadow: 0 40px 50px -25px rgba(0,0,0,0.3);
             border: 6px solid white;
             transition: 0.3s;
@@ -309,16 +307,7 @@
             border: 1px solid rgba(180, 140, 108, 0.3);
         }
 
-        /* ===== SEÇÕES ===== */
-        .section-light {
-            background-color: white;
-        }
-
-        .section-cream {
-            background-color: #fcf8f5;
-        }
-
-        /* Cards de serviços */
+        /* ===== CARDS E GRIDS ===== */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -345,7 +334,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Listas */
         .lista-itens {
             list-style: none;
             margin: 1.5rem 0;
@@ -361,7 +349,6 @@
             width: 24px;
         }
 
-        /* Grid 2 colunas */
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -457,16 +444,6 @@
             transform: translateX(-50%);
             width: 120px;
         }
-        .whats-number-large {
-            font-size: 3rem;
-            font-weight: 700;
-            background: rgba(255,255,255,0.1);
-            padding: 1rem 3rem;
-            border-radius: 80px;
-            display: inline-block;
-            margin: 2rem 0;
-            border: 2px solid var(--golden-stone);
-        }
 
         /* Benefícios */
         .beneficios-list {
@@ -542,11 +519,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .whats-number-large {
-                font-size: 2rem;
-                padding: 1rem 1.5rem;
-            }
-            
             .foto-destaque {
                 margin: 0 auto;
             }
@@ -567,7 +539,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
     <div class="header-flex">
         <div class="logo">Michele Núbia<span>.</span></div>
@@ -579,7 +550,7 @@
             <a href="#depoimentos">Depoimentos</a>
             <a href="#faq">FAQ</a>
             <a href="#contato">Contato</a>
-            <a href="https://wa.me/556493256081" class="btn-whats-nav" target="_blank"><i class="fab fa-whatsapp"></i> (64) 9325-6081</a>
+            <a href="https://wa.me/556493256081" class="btn-whats-nav" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
         </nav>
 
         <button class="mobile-menu-btn" id="mobileBtn">
@@ -590,7 +561,6 @@
     </div>
 </header>
 
-<!-- MOBILE OVERLAY -->
 <div class="mobile-overlay" id="mobileOverlay">
     <a href="#home" onclick="fecharMenu()">Início</a>
     <a href="#sobre" onclick="fecharMenu()">Sobre</a>
@@ -649,7 +619,7 @@
     </section>
 
     <!-- SERVIÇOS / ABORDAGEM TRG -->
-    <section id="servicos" class="section-cream">
+    <section id="servicos" style="background: #f8f3ef;">
         <div class="container">
             <h2 style="text-align: center; display: block;">Como funciona a TRG?</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto;">A Terapia de Reprocessamento Generativo acessa memórias e emoções presas no sistema nervoso, promovendo cura duradoura.</p>
@@ -725,7 +695,7 @@
     </section>
 
     <!-- DEPOIMENTOS -->
-    <section id="depoimentos" class="section-cream">
+    <section id="depoimentos" style="background: #f8f3ef;">
         <div class="container">
             <h2 style="text-align: center; display: block;">O que dizem quem já passou</h2>
             <div class="depoimentos-grid">
@@ -733,28 +703,28 @@
                     <p>"A terapia com a Michele transformou minha vida. Consegui resolver traumas que me acompanhavam há anos. Recomendo demais!"</p>
                     <div class="depoimento-author">
                         <i class="fas fa-user-circle"></i>
-                        <div><strong>Ana S.</strong><br> <span style="font-size: 0.9rem;">há 2 meses</span></div>
+                        <div><strong>Ana S.</strong></div>
                     </div>
                 </div>
                 <div class="depoimento-card">
                     <p>"Finalmente consegui sair de padrões repetitivos de relacionamento. A abordagem da TRG é incrível e a Michele é muito acolhedora."</p>
                     <div class="depoimento-author">
                         <i class="fas fa-user-circle"></i>
-                        <div><strong>Carlos M.</strong><br> <span style="font-size: 0.9rem;">há 3 semanas</span></div>
+                        <div><strong>Carlos M.</strong></div>
                     </div>
                 </div>
                 <div class="depoimento-card">
                     <p>"Atendimento online superou minhas expectativas. Ambiente seguro e a Michele transmite muita confiança."</p>
                     <div class="depoimento-author">
                         <i class="fas fa-user-circle"></i>
-                        <div><strong>Mariana L.</strong><br> <span style="font-size: 0.9rem;">há 1 mês</span></div>
+                        <div><strong>Mariana L.</strong></div>
                     </div>
                 </div>
                 <div class="depoimento-card">
                     <p>"Profissional incrível, formada e em constante aperfeiçoamento. Me sinto acolhida e compreendida em cada sessão."</p>
                     <div class="depoimento-author">
                         <i class="fas fa-user-circle"></i>
-                        <div><strong>João P.</strong><br> <span style="font-size: 0.9rem;">há 2 semanas</span></div>
+                        <div><strong>João P.</strong></div>
                     </div>
                 </div>
             </div>
@@ -802,28 +772,16 @@
                         <p>Basta clicar em qualquer botão de WhatsApp do site e enviar uma mensagem. Respondo em até algumas horas.</p>
                     </div>
                 </div>
-                <div class="faq-item" onclick="toggleFaq(this)">
-                    <div class="faq-question">
-                        <span>O atendimento é realmente sigiloso?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sim, sigo o código de ética profissional e todas as sessões são confidenciais.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTATO FINAL -->
+    <!-- CONTATO FINAL (apenas botão, sem número repetido) -->
     <section id="contato" class="contato-destacado">
         <div class="container">
             <h2>Vamos começar sua jornada?</h2>
-            <p style="color: #f0e2d4; font-size: 1.3rem; max-width: 700px; margin: 0 auto;">Dê o primeiro passo para cuidar da sua saúde emocional</p>
-            <div class="whats-number-large">
-                <i class="fab fa-whatsapp" style="color: #25d366;"></i> (64) 9325-6081
-            </div>
-            <a href="https://wa.me/556493256081" class="btn-whats-primary" style="background: white; color: var(--deep-teal); margin: 1rem auto;" target="_blank"><i class="fab fa-whatsapp" style="color: #25d366;"></i> ENVIAR MENSAGEM AGORA</a>
+            <p style="color: #f0e2d4; font-size: 1.3rem; max-width: 700px; margin: 0 auto 3rem;">Dê o primeiro passo para cuidar da sua saúde emocional</p>
+            <a href="https://wa.me/556493256081" class="btn-whats-primary" style="background: white; color: var(--deep-teal); margin: 0 auto;" target="_blank"><i class="fab fa-whatsapp" style="color: #25d366;"></i> ENVIAR MENSAGEM AGORA</a>
             <p style="margin-top: 2rem; color: #ebe1d7;"><i class="fas fa-globe"></i> Atendimento online para todo o Brasil</p>
         </div>
     </section>
@@ -831,8 +789,7 @@
     <footer>
         <div class="logo" style="color: white; font-size: 2rem; margin-bottom: 1rem;">Michele Núbia<span style="color: var(--golden-stone);">.</span></div>
         <p>TRG • Psicanálise Contemporânea • Acolhimento</p>
-        <p style="margin: 1.5rem 0;">© 2026 Michele Núbia Terapeuta • Todos os direitos reservados</p>
-        <p><a href="https://wa.me/556493256081" style="color: var(--golden-stone); text-decoration: none; font-size: 1.2rem;">(64) 9325-6081</a></p>
+        <p style="margin: 1.5rem 0;">© 2026 Michele Núbia Terapeuta</p>
     </footer>
 
     <a href="https://wa.me/556493256081" class="whatsapp-float" target="_blank">
@@ -841,7 +798,6 @@
 </main>
 
 <script>
-    // Mobile menu
     const mobileBtn = document.getElementById('mobileBtn');
     const mobileOverlay = document.getElementById('mobileOverlay');
 
@@ -857,20 +813,16 @@
         document.body.style.overflow = 'auto';
     }
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if (this.getAttribute('href').startsWith('#')) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
 
-    // FAQ toggle
     function toggleFaq(element) {
         element.classList.toggle('active');
     }
